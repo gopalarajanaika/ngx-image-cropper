@@ -1,0 +1,8 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<input type="file" (change)="setImageToTag($event)"><br><br>
+<ngx-image-editor *ngIf="config.ImageUrl"
+  [config]="config"
+  (close)="close($event)"
+  (load)="load($event)"
+  (file)="getEditedFile($event)">
+</ngx-image-editor>
